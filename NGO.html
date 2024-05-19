@@ -1,0 +1,61 @@
+<html>
+<head>
+<!-- page title -->
+<title>Lawrance's Destination</title>
+<!-- link to external stylesheet -->
+<link rel="stylesheet" href="styles.css">
+<!-- internal styles for navigation -->
+    <style>
+        nav a {display:none}/* Hide navigation links by default */
+        .showNav a {display:block;}/* Show navigation links when .showNav class is applied */
+    </style>
+</head>
+
+<body>
+    <!-- Main heading -->
+    <P class="mainheading">Lawrance's Destination<BR>'LET'S DESIGN FUTURE FOR FUTURE LEADERS'</p>
+    <!-- Menu button to toggle navigation -->
+    <button id="menuButton">Menu</button>
+    
+    <!-- Navigation links -->
+    <nav>
+    <TABLE>
+        <TR><TD><a href="home.html">Home</a></TD><TR>
+        <TR><TD><a href="about.html">About</a></TD><TR>
+        <TR><TD><a href="case_studies.html">Case Studies</a></TD><TR>
+        <TR><TD><a href="participate.html">Participate</a></TD><TR>
+        <TR><TD><a href="contact.html">Contact</a></TD><TR>
+    </TABLE>
+    </nav>
+    
+    <!-- Main content section -->
+    <div class="content">
+        <h1>Welcome to Lawrance's Destination</h1>
+        <p>Empowering communities for a brighter future.</p>
+        <img src="education2.jpeg" alt="Image description">
+    </div>
+    
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 Lawrance's Destination. All rights reserved.</p>
+    </footer>
+    <!-- JavaScript to toggle navigation visibility -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get the menu button and navigation links
+            const menuButton = document.getElementById('menuButton');
+            const navLinks = document.querySelector('nav');
+
+            // Toggle the 'showNav' class when the menu button is clicked
+            menuButton.addEventListener('click', function () {
+                navLinks.classList.toggle('showNav');
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
